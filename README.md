@@ -3,19 +3,32 @@ Cast Vagrant development box
 
 This is a development box for the Vast project.
 
+Changes
+=======
+
+* 23.03.2011 - v0.1.0
+  - Initial release
+
 Requirements
 ============
 
-- Virtualbox >= 4.0
-- Vagrant >= 0.7
+- Virtualbox >= 4.0 ([http://www.virtualbox.org/](http://www.virtualbox.org/))
+- Vagrant >= 0.7 ([http://vagrantup.comx/](http://vagrantup.com))
 
-Installation / setup
-====================
+Box installation / setup
+=======================
 
-vagrant box add cast /local/path/the.box http://path.to/the.box
-cd ~/vagrant/cast
-vagrant init cast
-vagrant up
+1. Download and add Cast box
+    vagrant box add cast /local/path/the.box http://path.to/the.box
+
+2. Create and change to a Cast box root directory
+    mkdir ~/vagrant/cast ; cd ~/vagrant/cast
+
+3. Initialize Cast box inside this directory
+    vagrant init cast
+
+4. Start the VM
+   vagrant up
 
 Usage
 =====
@@ -30,5 +43,5 @@ Usage
 Contact / Help
 ==============
 
-Mailing list:
+Mailing list: https://groups.google.com/forum/#!forum/cast-dev  
 IRC: #cast-project @ freenode
