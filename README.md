@@ -1,20 +1,24 @@
-==Cast Vagrant development box==
+Cast Vagrant development box
+===========================
 
 This is a development box for the Vast project.
 
-==Requirements==
+Requirements
+============
 
 - Virtualbox >= 4.0
 - Vagrant >= 0.7
 
-==Installation / setup==
+Installation / setup
+====================
 
 vagrant box add cast /local/path/the.box http://path.to/the.box
 cd ~/vagrant/cast
 vagrant init cast
 vagrant up
 
-==Usage==
+Usage
+=====
 
 * `vagrant suspend` - save the snapshot and suspend the VM
 * `vagrant resume` - resume from a saved snapshot
@@ -23,7 +27,8 @@ vagrant up
 * `vagrant reload` - re-run the provisioner. Useful if you edit some cookbook
   settings and you want the provision to re-evaluate all the recipes again.
 
-==Contact / Help==
+Contact / Help
+==============
 
 Mailing list:
 IRC: #cast-project @ freenode
