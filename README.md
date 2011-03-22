@@ -18,17 +18,17 @@ Requirements
 Box installation / setup
 =======================
 
-1. Download and add Cast box
-    vagrant box add cast /local/path/the.box http://path.to/the.box
+1. Download and add Cast box  
+    `vagrant box add cast /local/path/the.box http://path.to/the.box`
 
-2. Create and change to a Cast box root directory
-    mkdir ~/vagrant/cast ; cd ~/vagrant/cast
+2. Create and change to a Cast box root directory  
+    `mkdir ~/vagrant/cast ; cd ~/vagrant/cast`
 
-3. Initialize Cast box inside this directory
-    vagrant init cast
+3. Initialize Cast box inside this directory  
+    `vagrant init cast`
 
-4. Start the VM
-   vagrant up
+4. Start the VM  
+   `vagrant up`
 
 Usage
 =====
