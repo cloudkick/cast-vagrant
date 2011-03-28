@@ -6,6 +6,10 @@ This is a development box for the Vast project.
 Changes
 =======
 
+* 29.03.2011 - v0.1.1
+  - Add npm recipe
+  - Set NODE_PATH environment variable to /data/cast/lib
+
 * 23.03.2011 - v0.1.0
   - Initial release
 
