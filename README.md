@@ -9,6 +9,9 @@ Changes
 * 29.03.2011 - v0.1.1
   - Add npm recipe
   - Set NODE_PATH environment variable to /data/cast/lib
+  - create Cast root directory (/opt/cast) on provisioning
+  - Start runsvdir on the Cast services directory (/opt/cast/services-enabled)
+  - Update the message of the day file
 
 * 23.03.2011 - v0.1.0
   - Initial release
@@ -22,16 +25,16 @@ Requirements
 Box installation / setup
 =======================
 
-1. Download and add Cast box  
+1. Download and add Cast box
     `vagrant box add cast /local/path/the.box http://path.to/the.box`
 
-2. Create and change to a Cast box root directory  
+2. Create and change to a Cast box root directory
     `mkdir ~/vagrant/cast ; cd ~/vagrant/cast`
 
-3. Initialize Cast box inside this directory  
+3. Initialize Cast box inside this directory
     `vagrant init cast`
 
-4. Start the VM  
+4. Start the VM
    `vagrant up`
 
 Usage
@@ -47,5 +50,5 @@ Usage
 Contact / Help
 ==============
 
-Mailing list: https://groups.google.com/forum/#!forum/cast-dev  
+Mailing list: https://groups.google.com/forum/#!forum/cast-dev
 IRC: #cast-project @ freenode
