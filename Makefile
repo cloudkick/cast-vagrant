@@ -1,9 +1,10 @@
 CURRENT_DATE=`date +%Y-%m-%d`
-FILE_NAME="cast-${CURRENT_DATE}.box"
+FILENAME="cast-${CURRENT_DATE}.box"
 CONTAINER='cast_vagrant_images'
 
 package:
 	echo "Creating box ${FILENAME}"
+	vagrant package --vagrantfile Vagrantfile.pkg
 	mv package.box ${FILENAME}
 
 upload:
