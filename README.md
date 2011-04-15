@@ -6,6 +6,15 @@ This is a development box for the Vast project.
 Changes
 =======
 
+* 15.04.2011 - v0.2.0
+ - Upgrade included node version to 0.4.6
+ - Upgrade included npm version to 1.0.0 rc-8
+ - Include node-inspector module
+ - Forward new ports (5858 - node debugger, 8080 - node-inspector)
+ - runit instance which monitors Cast services directory is now started as
+   vagrant user instead of root
+ - Cast vash completion library is now automatically sourced on login
+
 * 29.03.2011 - v0.1.1
   - Add npm recipe
   - Set NODE_PATH environment variable to /data/cast/lib
