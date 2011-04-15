@@ -3,8 +3,4 @@ Vagrant::Config.run do |config|
 
   # IP address
   config.vm.network "44.44.44.44"
-
-  # Port forwarding
-  config.vm.forward_port("ssh", 22, 2222)
-  config.vm.forward_port("cast_agent", 49443, 49443)
 end

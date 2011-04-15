@@ -11,7 +11,11 @@ Vagrant::Config.run do |config|
     {
         :nodejs =>
         {
-            :version => "0.4.3"
+            :version => "0.4.6"
+        },
+        :npm =>
+        {
+            :revision => "v1.0.1rc8"
         }
     })
   end
@@ -22,4 +26,6 @@ Vagrant::Config.run do |config|
   # Port forwarding
   config.vm.forward_port("ssh", 22, 2323)
   config.vm.forward_port("cast_agent", 49443, 11111)
+  config.vm.forward_port("node-inspector", 8080, 8080)
+  config.vm.forward_port("node-debugger", 5858, 5858)
 end
